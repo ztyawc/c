@@ -69,3 +69,15 @@ void Bubble_Sort(){
         printf("%d\n",arr[i]);
     }
 }
+void str_convert(){
+    //将字符串大写转小写，小写转大写
+    char str[20];
+    gets(str);
+    for (int i = 0; str[i]!='\0';i++) {
+        if(str[i]>='A'&&str[i]<='Z')
+            str[i]+=32;
+        else if(str[i]>='a'&&str[i]<='z')
+            str[i]-=32;
+    }
+    puts(str);
+}
